@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG IM FORM - Dynamic Form Builder</title>
+    <!-- Load Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import (Inter is assumed available in modern browsers, but explicitly setting a fallback) */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f8faff; /* Very light blue/off-white background */
+        }
+        .text-primary-600 {
+            color: #3b82f6; /* Blue for primary accents */
+        }
+        .bg-primary-600 {
+            background-color: #3b82f6;
+        }
+        .shadow-custom {
+            box-shadow: 0 10px 30px -5px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <h1 class="text-2xl font-extrabold text-gray-900">
+                NG <span class="text-primary-600">IM FORM</span>
+            </h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-primary-600 transition duration-150">Features</a>
+                <a href="#uses" class="text-gray-600 hover:text-primary-600 transition duration-150">Use Cases</a>
+                <a href="#" class="text-gray-600 hover:text-primary-600 transition duration-150">Docs</a>
+            </nav>
+            <a href="#" class="bg-primary-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-300 shadow-lg hidden sm:inline-block">
+                Start Demo
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 sm:py-32 text-center">
+            <div class="max-w-5xl mx-auto px-4">
+                <p class="text-sm font-semibold uppercase tracking-widest text-primary-600 mb-3">
+                    Powered by Bootstrap 5
+                </p>
+                <h2 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight">
+                    The Dynamic Form Builder for <span class="text-primary-600">Developers</span>
+                </h2>
+                <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
+                    NG IM FORM enables you to create dynamic and configurable forms at runtime through a visual, drag-and-drop interface, ideal for custom builders and survey generators.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#features" class="bg-primary-600 text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-blue-700 transition duration-300 shadow-custom">
+                        Explore Features
+                    </a>
+                    <a href="#" class="bg-white text-gray-800 border border-gray-300 px-8 py-3 rounded-xl font-medium text-lg hover:bg-gray-100 transition duration-300">
+                        View Documentation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Grid Section -->
+        <section id="features" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Core Capabilities</h3>
+                    <p class="mt-4 text-xl text-gray-600">Total flexibility in form design and data output.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Feature 1: Dynamic Configuration -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-primary-600 mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.548.336 1.157.382 1.724 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Runtime Configuration</h4>
+                        <p class="text-gray-600">Easily add multiple sections and various form fields (text, select, radio) within a visual interface.</p>
+                    </div>
+
+                    <!-- Feature 2: Drag-and-Drop Reordering -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-primary-600 mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Drag-and-Drop Flexibility</h4>
+                        <p class="text-gray-600">Reorder sections and individual fields effortlessly with intuitive drag-and-drop functionality for perfect layouts.</p>
+                    </div>
+
+                    <!-- Feature 3: Modern & Responsive UI -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-primary-600 mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25M7 11h10M4 11h16M4 5h16M4 19h16"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Bootstrap 5 Design</h4>
+                        <p class="text-gray-600">Built with Bootstrap 5 principles for a clean, modern, and fully responsive look across all device sizes.</p>
+                    </div>
+
+                    <!-- Feature 4: JSON Submission -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-primary-600 mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">JSON-Ready Data</h4>
+                        <p class="text-gray-600">Once designed, the entire form's configuration and submitted data are output as clean, structured JSON.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="uses" class="py-16 sm:py-24 bg-f8faff">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Ideal Scenarios</h3>
+                    <p class="mt-4 text-xl text-gray-600">Power your most complex data entry requirements.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <!-- Use Case 1 -->
+                    <div class="flex items-start p-6 bg-white rounded-lg shadow-md">
+                        <svg class="flex-shrink-0 w-8 h-8 text-primary-600 mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"></path></svg>
+                        <div>
+                            <p class="text-xl font-semibold text-gray-900">Custom Form Builders</p>
+                            <p class="text-gray-600">Allow end-users to design and deploy complex data collection instruments without writing any code.</p>
+                        </div>
+                    </div>
+
+                    <!-- Use Case 2 -->
+                    <div class="flex items-start p-6 bg-white rounded-lg shadow-md">
+                        <svg class="flex-shrink-0 w-8 h-8 text-primary-600 mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <div>
+                            <p class="text-xl font-semibold text-gray-900">Survey Generators</p>
+                            <p class="text-gray-600">Rapidly deploy detailed and multi-section surveys with guaranteed consistent, structured JSON output for easy analysis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Use Case 3 -->
+                    <div class="flex items-start p-6 bg-white rounded-lg shadow-md">
+                        <svg class="flex-shrink-0 w-8 h-8 text-primary-600 mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                        <div>
+                            <p class="text-xl font-semibold text-gray-900">Dynamic Data Entry Systems</p>
+                            <p class="text-gray-600">Implement dynamic workflows where data capture fields need to be adapted based on user roles or specific project needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action (CTA) Section -->
+        <section class="py-16 sm:py-20 bg-primary-600">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-4xl font-extrabold text-white">Ready to Build Something Dynamic?</h3>
+                <p class="mt-4 text-xl text-blue-100 max-w-2xl mx-auto">
+                    Take advantage of the power and flexibility of NG IM FORM today.
+                </p>
+                <a href="#" class="mt-8 inline-block bg-white text-primary-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition duration-300 shadow-xl">
+                    Get Started Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
+            <p class="text-gray-400">&copy; 2025 NG IM FORM. All rights reserved.</p>
+            <div class="mt-4 sm:mt-0 space-x-4 text-sm">
+                <a href="#" class="hover:text-primary-600">Privacy Policy</a>
+                <a href="#" class="hover:text-primary-600">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
