@@ -19,10 +19,18 @@ body {
   background-color: #eef2ff;
 }
 
+.bg-deep-green-light-footer {
+  background-color: #e1e8ff;
+}
+
 .features-section,
 .ideal-scenarios {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
+}
+
+.get-started-icons {
+  font-size: 30px !important;
 }
 
 .card-feature {
@@ -33,4 +41,8 @@ body {
 .card-feature:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   transform: translateY(-5px);
+}
+
+.footer-link {
+  text-decoration: none;
 }
