@@ -35,7 +35,7 @@
                                 <a class="nav-link" href="installation.html">Installation & Verify</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="form-builder.html">Form Builder</a>
+                                <a class="nav-link" href="form-builder.html">Form Builder</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="form-preview.html">Form Preview</a>
@@ -44,7 +44,7 @@
                                 <a class="nav-link" href="data-model.html">Data Model</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contribution.html">Contribution Guidelines</a>
+                                <a class="nav-link active" href="contribution.html">Contribution Guidelines</a>
                             </li>
                         </ul>
                     </div>
@@ -70,141 +70,113 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <section>
-                    <h2 class="text-success">Introduction</h2>
+                    <h2 class="text-success">Contributing Guidelines</h2>
                     <hr>
 
                     <p>
-                        The Form Builder Module helps you build fully customizable, dynamic forms with ease.
-                        It is a part of the <code>ng-im-form-bootstrap</code> library.
+                        Thank you for your interest in contributing to this project! Please read the following
+                        guidelines carefully before making any contributions.
                     </p>
-                </section>
-
-                <section id="configure-styles" class="mt-5">
-                    <h2 class="text-success">Import the Module</h2>
-                    <hr>
-
-                    <p>
-                        To use the form builder, import <code>FormBuilderModule</code> into your application’s module
-                        where you want
-                        to use it.
-                    </p>
-
-                    <p>Example – <code>app.module.ts</code>:</p>
-
-                    <pre><code class="language-javascript">import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormBuilderModule } from 'ng-im-form-bootstrap';
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, FormBuilderModule],
-  bootstrap: [AppComponent],
-})
-export class AppModule {}</code></pre>
                 </section>
 
                 <section class="mt-5">
-                    <h2 class="text-success">Use the Component</h2>
+                    <h2 class="text-success">Fork the Repository</h2>
                     <hr>
 
-                    <p>To use the <b>Form Builder Component</b>, include the <code>ng-im-form-builder</code> selector in
-                        your
-                        component’s
-                        HTML file.
+                    <p>
+                        Start by forking the repository to your own GitHub account.
+                    </p>
+                </section>
+
+                <section class="mt-5">
+                    <h2 class="text-success">Work on the <code>development</code> Branch</h2>
+                    <hr>
+
+                    <p>All contributions must be based on the development branch.
+
+                    <ul>
+                        <li>If you are adding new features, fixing bugs, or making UI changes, always create your
+                            branch
+                            from development.</li>
+                        <li>
+                            Any change submitted to the main branch will be rejected.
+                        </li>
+                    </ul>
                     </p>
 
                     <p>
-                        Example – <code>app.component.html</code>
+                        Example:
                     </p>
 
-                    <pre><code class="language-html">&lt;ng-im-form-builder [preset]="null" (publishFormEvent)="storeNewForm($event)"&gt;&lt;/ng-im-form-builder&gt;</code></pre>
+                    <pre><code class="language-command">git checkout development
+git pull origin development
+git checkout -b feature/your-feature-name</code></pre>
                 </section>
 
-                <section id="verify-installation" class="mt-5">
-                    <h2 class="text-success">Component Details</h2>
+                <section class="mt-5">
+                    <h2 class="text-success">Contribution Process</h2>
                     <hr>
 
-                    <h5 class="text-success">Inputs</h5>
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr class="table-success">
-                                    <th>Input Name</th>
-                                    <th>Type</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <code>preset</code>
-                                    </td>
-                                    <td>
-                                        <code>INgImHorizontalFormModel</code>
-                                    </td>
-                                    <td>
-                                        The form structure object. Use this when editing or updating an existing form.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <code>isPublishing</code>
-                                    </td>
-                                    <td>
-                                        <code>boolean</code>
-                                    </td>
-                                    <td>
-                                        Controls whether a loading spinner is shown while publishing (saving) the form.
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <br>
-
-                    <h5 class="text-success">Output</h5>
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr class="table-success">
-                                    <th>Output Event</th>
-                                    <th>Emit Type</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <code>publishFormEvent</code>
-                                    </td>
-                                    <td>
-                                        <code>INgImHorizontalFormModel</code>
-                                    </td>
-                                    <td>
-                                        Emits the created form structure. You can handle this event to save the form
-                                        data to your backend.
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <p>
+                        Don't build the project — just code, test, and create a new PR. We will review your
+                        contribution, and your effort will be highly appreciated.
+                    </p>
                 </section>
 
-                <hr>
+                <section class="mt-5">
+                    <h2 class="text-success">Writing a Proper PR Description</h2>
+                    <hr>
 
-                <div class="d-flex justify-content-between">
-                    <a class="btn btn-success btn-lg" href="installation.html">
-                        <span><i class="fas fa-arrow-left"></i> Previous Page</span><br>
-                        <small class="text-prev-next-page">Learn about Installation</small>
-                    </a>
+                    <p>
+                        When submitting a Pull Request, please ensure your description is clear and complete.
+                    </p>
+                    <p>
+                        Your PR description <b>must include</b>:
+                    </p>
 
-                    <a class="btn btn-success btn-lg" href="form-preview.html">
-                        <span>Next Page <i class="fas fa-arrow-right"></i></span><br>
-                        <small class="text-prev-next-page">Learn about Form Preview</small>
-                    </a>
-                </div>
+                    <ol>
+                        <li><b>What changes were made</b> – Describe clearly what you added, removed, or modified.</li>
+                        <li><b>Why the changes were needed</b> – Mention the reason, issue, or context.</li>
+                        <li><b>Screenshots (if UI-related)</b> – Before/after screenshots are highly recommended.
+                        </li>
+                        <li><b>Steps to test the changes</b> – Help reviewers verify your contribution.
+                        </li>
+                    </ol>
+
+                    <p>
+                        <b>Example PR Description:</b>
+                    </p>
+
+                    <pre><code class="language-command">### Changes Made
+- Added a new sidebar component to improve navigation.
+- Updated the color scheme of the header section.
+
+### Reason
+The previous header UI did not match the new design guidelines.
+
+### Screenshots
+(Insert before/after images)
+
+### Testing Steps
+
+1. Run the project
+2. Navigate to the dashboard
+3. Verify the new sidebar and updated header styles</code></pre>
+                </section>
+
+                <section class="mt-5">
+                    <h2 class="text-danger">What Will Be Rejected</h2>
+                    <hr>
+
+                    <p>
+                    <ul>
+                        <li>Pull requests created on the <b>main</b> branch.</li>
+                        <li>Changes that are not clearly documented in the PR description.</li>
+                        <li>UI changes without screenshots.</li>
+                        <li>Unnecessary modifications (formatting-only PRs without reason).</li>
+                    </ul>
+                    </p>
+                </section>
             </div>
         </div>
     </div>
